@@ -1,94 +1,43 @@
 #include <iostream>
 #include <string>
+
+
 using namespace std;
 
 
-struct Sample {   // создан новый тип данных Sample
+void Menu()
+{
+	::continue::
 
-	int a;
-	int b;
-	string m;
+	int choice;
+	do
+	{
+		cout << "0. Добавить\n1. Текущие\n 2. Выполненные\n3. Выход\n\n";
+		cin >> choice;
+		switch (choice)
+		{
+			case 0:
+				cout << "Введите описание дела: \n";
+				break;
+			case 1:
+				cout << "Текущие дела: \n";
+				break;
+			case 2:
+				cout << "Выполненные дела: \n";
+				break;
 
-
-};
-
-Sample return_pair(int x, string field) {    // функция типа Sample
-
-	Sample result;  // локальный экземпляр структуры
-
-	result.a = x * x;	// заполняю нужными значениями
-	result.b = x * x * x;
-	result.m = field
-
-	return result;
-
-
-}
-
-
-int add() {
-
-}
-
-
-int del() {
-
-}
-
-
-int done() {
-
-
-}
-
-
-int ls() {
-
-
-}
-
-
-int help() {
-
-
-}
-
-
-int report() {
-
-
-}
-
-class TodoItem {
-private:
-	int id;
-	std::string description;
-	bool completed;
-public:
-
-	TodoItem() : id(0), description(""), completed(false) {}
-	~TodoItem() = default;
-
-};
-
-
-int main() {
-
-	int x;
-	string field;
-	std::list<TodoItem> todoItems;
-
-	todoItems.clear();
-	while (1) {
-		system("sls");
-		std::cout << "Todo list Maker - " << version << std::endll;
+			case 3:
+				cout << "Здесь не на что смотреть, мотивируй себя сам \n";
+				break;
+		}
 	}
 
-	cin >> x >> field;
-	Sample pairs = return_pair(x, field);
-	std::cout << pairs.a << ' ' << pairs.b << pairs.m << '\n'; 
+	if (choice != 3 || choice >3)
+		goto continue;
 
-std::string version = "v.0.1.0";
-std::cout << "Todo list maker - " << version << std::endl;
+
+
+
+
 
 }
