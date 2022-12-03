@@ -7,10 +7,11 @@ using namespace std;
 
 void Menu()
 {
-	::continue::
+	setlocale(LC_ALL, "ru");
+
+	link:
 
 	int choice;
-	do
 	{
 		cout << "0. Добавить\n1. Текущие\n 2. Выполненные\n3. Выход\n\n";
 		cin >> choice;
@@ -32,12 +33,16 @@ void Menu()
 		}
 	}
 
-	if (choice != 3 || choice >3)
-		goto continue;
+    if (choice >3)
+		goto link;
+
+}
 
 
+int main()
+{
+Menu();
 
 
-
-
+	
 }
